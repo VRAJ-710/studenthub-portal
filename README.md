@@ -2,7 +2,7 @@
 
 This project is a static multi-page student portal built for a semester-long academic system.
 
-## Included pages
+# Activities included:
 - Home
 - Dashboard
 - Courses
@@ -16,7 +16,5 @@ This project is a static multi-page student portal built for a semester-long aca
 - Planning document
 
 ## Structure
-- `css/script.css` contains shared styles
-- `java/script.js` handles the mobile navigation and footer year
 - `pages/` stores all portal pages
-- `docs/plan.html` contains the sitemap, wireframe, and folder structure documentation
+- 'index.html' : open the file to see the webpage structure.
