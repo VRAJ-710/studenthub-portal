@@ -1,1 +1,342 @@
+/* 
+   Used on: ALL PAGES (Home, Login, Registration, Profile, Dashboard,
+            Course, Assignment, Attendance, Result, Contact)
+   Purpose: Removes default browser spacing and sets a consistent box model
+            so every page starts from the same clean baseline. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+/* 
+  
+   Used on: ALL PAGES (Home, Login, Registration, Profile, Dashboard,
+            Course, Assignment, Attendance, Result, Contact)
+   Purpose: Sets the base font, background color, text color, and line
+            spacing for the entire website. Every page inherits these styles.
+ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/*
+   Used on: ALL PAGES (Home, Login, Registration, Profile, Dashboard,
+            Course, Assignment, Attendance, Result, Contact)
+   Purpose: Styles the primary page title that appears at the top of every
+            page (e.g., "StudentHub Portal", "Login", "Profile", etc.)
+    */
+h1 {
+  background-color: #4a90d9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+}
+
+
+/* 
+   SUB-HEADING (h2)
+   Used on: ALL PAGES (Home, Login, Registration, Profile, Dashboard,
+            Course, Assignment, Attendance, Result, Contact)
+   Purpose: Styles the section sub-headings like "Main Pages", "Student Login",
+            "Student Profile", "Current Courses", "Assignment List", etc.
+   */
+h2 {
+  color: #4a90d9;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 22px;
+  border-bottom: 2px solid #4a90d9;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/*
+   NAVIGATION BAR
+   Used on: Login, Registration, Profile, Dashboard, Course,
+            Assignment, Attendance, Result, Contact Pages
+   NOT used on: Home Page (index.html)
+   Purpose: Creates a horizontal navigation bar with links to all pages.
+            This bar appears below the h1 heading on every inner page.
+   */
+nav {
+  /* 'nav' selector — targets the <nav> element used for the navigation bar */
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigation Links (inside the nav bar) */
+/* Used on: Login, Registration, Profile, Dashboard, Course,
+            Assignment, Attendance, Result, Contact Pages */
+/* Purpose: Styles each individual clickable link inside the navigation bar */
+nav a {
+  /* 'nav a' selector — targets only <a> (link) elements INSIDE the <nav> */
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  margin: 2px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* Navigation Links Hover Effect */
+/* Used on: Login, Registration, Profile, Dashboard, Course,
+            Assignment, Attendance, Result, Contact Pages */
+/* Purpose: Changes the link appearance when the user hovers their mouse over it */
+nav a:hover {
+  background-color: #4a90d9;
+  border-radius: 4px;
+}
+
+
+/* 
+   PARAGRAPHS
+   Used on: ALL PAGES (Home, Login, Registration, Profile, Dashboard,
+            Course, Assignment, Attendance, Result, Contact)
+   Purpose: Styles all <p> (paragraph) elements. Used for descriptions on
+            the Home page, profile details on the Profile page, contact
+            info on the Contact page, and form helper text on Login page.
+    */
+p {
+  padding: 5px 25px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+
+/* 
+  GENERAL LINK STYLING
+   Used on: ALL PAGES (Home, Login, Registration, Profile, Dashboard,
+            Course, Assignment, Attendance, Result, Contact)
+   Purpose: Styles all <a> (link) elements on the page. This applies to
+            links in paragraphs, list items, and any other general links.
+    */
+a {
+  color: #4a90d9;
+  text-decoration: none;
+}
+
+/* General Link Hover Effect  */
+/* Used on: ALL PAGES — applies wherever links appear (Home page list, Login page text, etc.) */
+/* Purpose: Adds an underline when the user hovers over any link for visual feedback */
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* 
+  UNORDERED LIST STYLING
+   Used on: Home Page (index.html) — for the list of page links
+            Dashboard Page — for the summary items (Pending Assignments, etc.)
+            Course Page — for the list of courses
+            Assignment Page — for the list of assignments
+            Attendance Page — for the attendance summary list
+            Result Page — for the exam results list
+   Purpose: Styles the bullet-point lists used to display information.
+   */
+ul {
+  list-style-type: square;
+  margin-left: 45px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* List Item Styling  */
+/* Used on: Same pages as <ul> above (Home, Dashboard, Course, Assignment, Attendance, Result) */
+/* Purpose: Adds spacing and sets font size for each individual list item */
+ul li {
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+
+/* 
+   HOME PAGE BOX-STYLE LINK LIST  
+   Used on: Home Page (index.html) ONLY
+   Purpose: Displays the page links as clickable box-shaped cards arranged
+    
+   Clicking any box redirects to that page.
+   */
+.home-links {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 25px;
+  margin-left: 0;
+}
+
+/*  Home Page List Item (each box container)  */
+/* Used on: Home Page (index.html) ONLY */
+/* Purpose: Makes each <li> a box-shaped card with a white background and border */
+.home-links li {
+  background-color: white;
+  border: 2px solid #4a90d9;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/*  Home Page List Item Hover Effect  */
+/* Used on: Home Page (index.html)  */
+/* Purpose: Changes the box background and slightly lifts it when hovered */
+.home-links li:hover {
+  background-color: #4a90d9;
+  transform: scale(1.05);
+}
+
+/* Home Page Box Link Styling  */
+/* Used on: Home Page (index.html)  */
+/* Purpose: Makes the <a> link fill the entire box so the whole box is clickable */
+.home-links li a {
+  color: #4a90d9;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+/*  Home Page Box Link Hover Text Color  */
+/* Used on: Home Page (index.html)  */
+/* Purpose: Changes the link text to white when hovering so it's visible on the blue background */
+.home-links li:hover a {
+  color: white;
+}
+
+
+/* 
+    FORM STYLING
+   Used on: Login Page (pages/login.html) — for the username/password login form
+            Registration Page (pages/registration.html) — for the account creation form
+   Purpose: Creates a centered, card-like form container with a white background
+            and border, giving the form a clean, boxed appearance.
+   */
+form {
+  background-color: white;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/*  Paragraphs Inside Forms*/
+/* Used on: Login Page, Registration Page */
+/* Purpose: Overrides the general paragraph padding for paragraphs inside forms,
+            since form paragraphs wrap each label+input pair and need less side padding */
+form p {
+  padding: 5px 0;
+}
+
+
+/* 
+   FORM LABEL STYLING
+   Used on: Login Page (pages/login.html) — labels for "Username:" and "Password:"
+            Registration Page (pages/registration.html) — labels for "Full Name:",
+            "Email:", "Student ID:", "Password:"
+   Purpose: Styles the text labels that appear next to form input fields.
+   */
+label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* 
+  FORM INPUT FIELD STYLING
+   Used on: Login Page — for the username (text) and password input fields
+            Registration Page — for name (text), email, student ID (text),
+            and password input fields
+  
+   Purpose: Styles the text input boxes where users type their information.
+            Uses attribute selectors to target specific input types.
+  */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 220px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* --- Input Field Focus State --- */
+/* Used on: Login Page, Registration Page */
+/* Purpose: Changes the input border color when the user clicks/tabs into the
+            field (focus state), giving visual feedback that the field is active */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #4a90d9;
+  outline: none;
+}
+
+
+/* 
+   BUTTON STYLING
+   Used on: Login Page (pages/login.html) — the "Login" submit button
+            Registration Page (pages/registration.html) — the "Register" submit button
+   
+   Purpose: Styles the form submit buttons with a blue background and white text.
+    */
+button {
+  background-color: #4a90d9;
+  color: white;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*  Button Hover Effect  */
+/* Used on: Login Page, Registration Page */
+/* Purpose: Darkens the button color when the user hovers over it for visual feedback */
+button:hover {
+  background-color: #3a7bc8;
+}
+
+
+/* 
+   SECTION 14: STRONG TAG STYLING
+   Used on: Profile Page (pages/profile.html) ONLY
+   Purpose: Styles the <strong> tags used on the Profile page to label
+            student information like "Name:", "Student ID:", "Department:",
+            "Semester:", and "INSTITUTION:".
+   */
+strong {
+  color: #555;
+}
+
+
+/* 
+   SECTION 15: FOOTER STYLING
+   Used on: Currently NOT actively used on any page (prepared for future use)
+   Purpose: Pre-defined styles for a <footer> element that can be added to
+            any page later. It creates a dark bar at the bottom of the page
+            with centered white text — similar to the navigation bar style.
+   */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 13px;
+}
