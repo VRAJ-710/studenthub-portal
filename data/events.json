@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Orientation Day", "date": "2026-01-15", "category": "Academic", "description": "Welcome session for new students." },
+  { "id": 2, "title": "Science Fair", "date": "2026-02-10", "category": "Academic", "description": "Students showcase science projects." },
+  { "id": 3, "title": "Sports Day", "date": "2026-02-20", "category": "Sports", "description": "Annual sports competition." },
+  { "id": 4, "title": "Cultural Fest", "date": "2026-03-05", "category": "Cultural", "description": "Dance, music, and drama performances." },
+  { "id": 5, "title": "Guest Lecture", "date": "2026-03-12", "category": "Academic", "description": "Talk by industry expert on AI." },
+  { "id": 6, "title": "Blood Donation Camp", "date": "2026-03-25", "category": "Social", "description": "Voluntary blood donation drive." },
+  { "id": 7, "title": "Coding Contest", "date": "2026-04-02", "category": "Academic", "description": "Programming competition for all years." },
+  { "id": 8, "title": "Cricket Tournament", "date": "2026-04-15", "category": "Sports", "description": "Inter-department cricket matches." },
+  { "id": 9, "title": "Art Exhibition", "date": "2026-04-28", "category": "Cultural", "description": "Display of student artwork." },
+  { "id": 10, "title": "Tree Plantation", "date": "2026-05-05", "category": "Social", "description": "Plant trees in campus." },
+  { "id": 11, "title": "Workshop on Web Dev", "date": "2026-05-18", "category": "Academic", "description": "Hands-on HTML, CSS, JS workshop." },
+  { "id": 12, "title": "Annual Day", "date": "2026-06-01", "category": "Cultural", "description": "Prize distribution and cultural show." },
+  { "id": 13, "title": "Chess Competition", "date": "2026-06-10", "category": "Sports", "description": "Inter-college chess tournament." },
+  { "id": 14, "title": "Alumni Meet", "date": "2026-07-05", "category": "Social", "description": "Meeting with graduated students." },
+  { "id": 15, "title": "Exam Prep Seminar", "date": "2026-07-20", "category": "Academic", "description": "Tips and tricks for exam preparation." }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "fullname": "Rahul Sharma",
+        "email": "rahul.sharma@example.com",
+        "mobile": "9876543210",
+        "gender": "Male",
+        "course": "Computer Engineering",
+        "submitted_at": "29-09-2026 18:05:36"
+    },
+    {
+        "fullname": "Priya Patel",
+        "email": "priya.patel@example.com",
+        "mobile": "9123456780",
+        "gender": "Female",
+        "course": "Information Technology",
+        "submitted_at": "29-09-2026 18:07:55"
+    }
+]

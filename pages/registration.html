@@ -22,13 +22,20 @@
   </nav>
   <hr>
   <h2>Create New Account</h2>
-  <form>
-    <p><label>Full Name:</label> <input type="text" name="name"></p>
-    <p><label>Email:</label> <input type="email" name="email"></p>
-    <p><label>Student ID:</label> <input type="text" name="studentid"></p>
-    <p><label>Password:</label> <input type="password" name="password"></p>
+  <form id="registration-form" novalidate>
+    <p><label for="name">Full Name:</label><input type="text" id="name" name="name" autocomplete="name" required><span class="error" id="name-error" role="alert"></span></p>
+    <p><label for="email">Email:</label><input type="email" id="email" name="email" autocomplete="email" required><span class="error" id="email-error" role="alert"></span></p>
+    <p><label for="mobile">Mobile Number:</label><input type="tel" id="mobile" name="mobile" inputmode="numeric" required><span class="error" id="mobile-error" role="alert"></span></p>
+    <p><label for="password">Password:</label><input type="password" id="password" name="password" autocomplete="new-password" required><span class="password-strength" id="password-strength" aria-live="polite">Password strength: Not checked</span><span class="error" id="password-error" role="alert"></span></p>
+    <p><label for="confirm-password">Confirm Password:</label><input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required><span class="error" id="confirm-password-error" role="alert"></span></p>
+    <p><label for="course">Course:</label><select id="course" name="course" required><option value="">Select a course</option><option value="computer">Computer Engineering</option><option value="business">Business Administration</option><option value="science">Science</option></select><span class="error" id="course-error" role="alert"></span></p>
+    <p><label for="year">Year:</label><select id="year" name="year" required><option value="">Select year</option><option value="1">First Year</option><option value="2">Second Year</option><option value="3">Third Year</option><option value="4">Fourth Year</option></select><span class="error" id="year-error" role="alert"></span></p>
+    <fieldset><legend>Gender:</legend><label><input type="radio" name="gender" value="male"> Male</label><label><input type="radio" name="gender" value="female"> Female</label><label><input type="radio" name="gender" value="other"> Other</label><span class="error" id="gender-error" role="alert"></span></fieldset>
+    <p><label class="terms-label"><input type="checkbox" id="terms" name="terms"> I accept the terms and conditions</label><span class="error" id="terms-error" role="alert"></span></p>
     <p><button type="submit">Register</button></p>
+    <p class="success-message" id="success-message" role="status"></p>
   </form>
   <script src="../java/script.js"></script>
+  <script src="../java/script1.js"></script>
 </body>
 </html>

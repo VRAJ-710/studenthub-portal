@@ -1,0 +1,17 @@
+[
+  { "id": 1, "question": "How to reset my password?", "answer": "Go to login page and click Forgot Password link.", "category": "Account" },
+  { "id": 2, "question": "Where can I see my attendance?", "answer": "Check the Attendance page from the dashboard.", "category": "Academic" },
+  { "id": 3, "question": "How to pay fees online?", "answer": "Use the fee payment portal link on the dashboard.", "category": "Fees" },
+  { "id": 4, "question": "When are exams scheduled?", "answer": "Exam dates are posted on the notice board and dashboard.", "category": "Academic" },
+  { "id": 5, "question": "How to get a bonafide certificate?", "answer": "Apply at the admin office with your ID card.", "category": "Documents" },
+  { "id": 6, "question": "Can I change my branch?", "answer": "Branch change is allowed after first year based on CGPA.", "category": "Academic" },
+  { "id": 7, "question": "What is the library timing?", "answer": "Library is open from 8 AM to 8 PM on weekdays.", "category": "Facilities" },
+  { "id": 8, "question": "How to apply for hostel?", "answer": "Fill the hostel form available at admin office.", "category": "Facilities" },
+  { "id": 9, "question": "Is there a bus facility?", "answer": "Yes, college buses run on 10 routes across the city.", "category": "Facilities" },
+  { "id": 10, "question": "How to contact my mentor?", "answer": "Mentor details are available on your profile page.", "category": "Account" },
+  { "id": 11, "question": "What is the fee refund policy?", "answer": "Refund is possible within 15 days of admission.", "category": "Fees" },
+  { "id": 12, "question": "How to get migration certificate?", "answer": "Submit a request at the exam section with required documents.", "category": "Documents" },
+  { "id": 13, "question": "Are there any scholarships?", "answer": "Yes, merit and need-based scholarships are available.", "category": "Fees" },
+  { "id": 14, "question": "How to access online study material?", "answer": "Login to the portal and go to Course Info page.", "category": "Academic" },
+  { "id": 15, "question": "Where is the placement cell?", "answer": "Placement cell is on the 2nd floor of the main building.", "category": "Facilities" }
+]

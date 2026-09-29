@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Aarav Patel", "department": "Computer Science", "semester": 3, "cgpa": 8.5 },
+  { "id": 2, "name": "Bhavna Shah", "department": "Information Technology", "semester": 5, "cgpa": 7.8 },
+  { "id": 3, "name": "Chirag Mehta", "department": "Computer Science", "semester": 1, "cgpa": 9.1 },
+  { "id": 4, "name": "Diya Sharma", "department": "Electronics", "semester": 3, "cgpa": 8.0 },
+  { "id": 5, "name": "Eshan Joshi", "department": "Mechanical", "semester": 7, "cgpa": 6.9 },
+  { "id": 6, "name": "Falguni Desai", "department": "Information Technology", "semester": 1, "cgpa": 8.3 },
+  { "id": 7, "name": "Gaurav Singh", "department": "Computer Science", "semester": 5, "cgpa": 7.5 },
+  { "id": 8, "name": "Hiral Trivedi", "department": "Electronics", "semester": 7, "cgpa": 8.8 },
+  { "id": 9, "name": "Ishaan Verma", "department": "Mechanical", "semester": 3, "cgpa": 7.2 },
+  { "id": 10, "name": "Jhanvi Rao", "department": "Computer Science", "semester": 1, "cgpa": 9.3 },
+  { "id": 11, "name": "Karan Gupta", "department": "Information Technology", "semester": 5, "cgpa": 6.5 },
+  { "id": 12, "name": "Lavanya Nair", "department": "Electronics", "semester": 3, "cgpa": 8.1 },
+  { "id": 13, "name": "Manav Kapoor", "department": "Mechanical", "semester": 7, "cgpa": 7.0 },
+  { "id": 14, "name": "Nisha Reddy", "department": "Computer Science", "semester": 5, "cgpa": 8.7 },
+  { "id": 15, "name": "Omkar Bhatt", "department": "Information Technology", "semester": 1, "cgpa": 9.0 }
+]

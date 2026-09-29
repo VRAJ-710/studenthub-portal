@@ -312,6 +312,47 @@ button:hover {
   background-color: #3a7bc8;
 }
 
+.error {
+  display: block;
+  color: #b00020;
+  font-size: 13px;
+  min-height: 18px;
+}
+
+.password-strength,
+.success-message {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.success-message {
+  color: #087f23;
+  font-weight: bold;
+}
+
+select {
+  padding: 6px;
+  width: 220px;
+}
+
+fieldset {
+  border: 0;
+  margin: 10px 0;
+}
+
+fieldset label,
+.terms-label {
+  width: auto;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
 
 /* 
    SECTION 14: STRONG TAG STYLING
@@ -339,4 +380,23 @@ footer {
   padding: 10px;
   margin-top: 30px;
   font-size: 13px;
+}
+
+
+/* 
+   PRACTICAL 6 - CARD STYLING
+   Used on: Practical 6 page (pages/practical6.html)
+   Purpose: Displays each event/student/FAQ record as a simple card box
+*/
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #4a90d9;
+  margin-bottom: 5px;
 }
