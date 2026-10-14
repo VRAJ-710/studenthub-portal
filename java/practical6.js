@@ -1,6 +1,4 @@
-// ============================================================
-// Practical 6 - Fetch API, Search, Filter, Sort, Pagination
-// ============================================================
+
 
 // ----- GLOBAL VARIABLES -----
 var allData = [];         // stores all fetched records
@@ -10,9 +8,7 @@ var currentPage = 1;      // current page number
 var itemsPerPage = 5;     // how many items to show per page
 
 
-// =========================
-// 1. LOAD SECTION (fetch JSON)
-// =========================
+
 function loadSection(section) {
   currentSection = section;
   currentPage = 1;
@@ -106,9 +102,7 @@ function setupFilterOptions(section, data) {
 }
 
 
-// =========================
-// 3. SETUP SORT OPTIONS
-// =========================
+
 function setupSortOptions(section) {
   var dropdown = document.getElementById("sortDropdown");
   dropdown.innerHTML = '<option value="default">Default</option>';
@@ -130,9 +124,7 @@ function setupSortOptions(section) {
 }
 
 
-// =========================
-// 4. SEARCH + FILTER + SORT
-// =========================
+
 function applySearchAndFilter() {
   var searchText = document.getElementById("searchBox").value.toLowerCase();
   var filterValue = document.getElementById("filterDropdown").value;
@@ -147,7 +139,7 @@ function applySearchAndFilter() {
     if (currentSection === "faqs") return item.category === filterValue;
   });
 
-  // ----- STEP 2: SEARCH using array filter() -----
+
   if (searchText !== "") {
     filteredData = filteredData.filter(function (item) {
       if (currentSection === "events") {
@@ -165,7 +157,7 @@ function applySearchAndFilter() {
     });
   }
 
-  // ----- STEP 3: SORT using array sort() -----
+
   if (sortValue !== "default") {
     filteredData.sort(function (a, b) {
       if (sortValue === "title-asc") return a.title.localeCompare(b.title);
@@ -182,15 +174,13 @@ function applySearchAndFilter() {
     });
   }
 
-  // reset to page 1 after search/filter
+ 
   currentPage = 1;
   renderData();
 }
 
 
-// =========================
-// 5. RENDER DATA (with pagination)
-// =========================
+
 function renderData() {
   var container = document.getElementById("dataContainer");
   container.innerHTML = "";
@@ -201,12 +191,11 @@ function renderData() {
     return;
   }
 
-  // ----- PAGINATION LOGIC using array slice() -----
   var startIndex = (currentPage - 1) * itemsPerPage;
   var endIndex = startIndex + itemsPerPage;
   var pageData = filteredData.slice(startIndex, endIndex);
 
-  // ----- RENDER ITEMS using array map() and join() -----
+
   var html = "";
 
   if (currentSection === "events") {
@@ -243,27 +232,25 @@ function renderData() {
 
   container.innerHTML = html;
 
-  // render pagination buttons
+  
   renderPagination();
 }
 
 
-// =========================
-// 6. RENDER PAGINATION BUTTONS
-// =========================
+
 function renderPagination() {
   var container = document.getElementById("paginationContainer");
   container.innerHTML = "";
 
   var totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
-  // show info text
+
   var info = document.createElement("span");
   info.textContent = "Page " + currentPage + " of " + totalPages +
     " (" + filteredData.length + " records)  ";
   container.appendChild(info);
 
-  // Previous button
+  
   if (currentPage > 1) {
     var prevBtn = document.createElement("button");
     prevBtn.textContent = "Previous";
@@ -275,7 +262,7 @@ function renderPagination() {
     container.appendChild(prevBtn);
   }
 
-  // Next button
+  
   if (currentPage < totalPages) {
     var nextBtn = document.createElement("button");
     nextBtn.textContent = "Next";
