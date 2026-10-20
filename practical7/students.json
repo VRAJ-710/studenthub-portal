@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Vraj Patel",
+        "email": "25dce027@charusat.edu.in",
+        "mobile": "9876543210",
+        "course": "Computer Engineering",
+        "message": "Student registration for Portal development and testing.",
+        "submitted_at": "29-09-2026 18:05:36"
+    },
+    {
+        "name": "Priya Sharma",
+        "email": "priya.sharma@example.com",
+        "mobile": "9123456780",
+        "course": "Information Technology",
+        "message": "Enrolling in upcoming campus hackathon.",
+        "submitted_at": "29-09-2026 18:15:20"
+    },
+    {
+        "name": "Aarav Mehta",
+        "email": "aarav.mehta@charusat.edu.in",
+        "mobile": "9898765432",
+        "course": "Artificial Intelligence",
+        "message": "Interested in AI research and machine learning lab projects.",
+        "submitted_at": "20-10-2026 18:38:56"
+    }
+]
